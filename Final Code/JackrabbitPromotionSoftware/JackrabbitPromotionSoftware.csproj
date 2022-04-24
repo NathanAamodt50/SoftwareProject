@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Reservation.cs" />
+    <Compile Include="ReservationGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationGUI.Designer.cs" />
+    <Compile Include="SearchGold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchGold.Designer.cs">
+      <DependentUpon>SearchGold.cs</DependentUpon>
+    </Compile>
     <Compile Include="No Results.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +91,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ReservationGUI.resx" />
+    <EmbeddedResource Include="SearchGold.resx">
+      <DependentUpon>SearchGold.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="No Results.resx">
       <DependentUpon>No Results.cs</DependentUpon>
     </EmbeddedResource>

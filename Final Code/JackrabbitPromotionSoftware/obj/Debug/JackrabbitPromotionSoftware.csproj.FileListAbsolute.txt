@@ -12,3 +12,5 @@ C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftwa
 C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.SearchResults.resources
 C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.SucessfullySent.resources
 C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.NoRes.resources
+C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.ReservationGUI.resources
+C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.SearchGold.resources

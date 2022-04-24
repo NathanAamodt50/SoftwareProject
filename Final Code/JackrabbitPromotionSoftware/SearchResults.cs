@@ -15,10 +15,7 @@ namespace JackrabbitPromotionSoftware
             InitializeComponent();
         }
 
-        private void SearchResults_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -42,6 +39,36 @@ namespace JackrabbitPromotionSoftware
         {
             SucessfullySent SS = new SucessfullySent();
             SS.Show();
+        }
+
+        private void SearchResults_Load(object sender, EventArgs e)
+        {
+            string Rank;
+            string name = Table[val].fName + " " + Table[val].lName;
+            int rankp =  Table[val].point/ 200;
+            switch (rankp)
+            {
+                case 1:
+                    Rank = "Bronze";
+                    break;
+                case 2:
+                    Rank = "Silver";
+                    break;
+                case 3:
+                    Rank = "Gold";
+                    break;
+                case 4:
+                    Rank = "Diamond";
+                    break;
+                case 5:
+                    Rank = "Platinum";
+                    break;
+                default:
+                    Rank = "Unranked";
+                    break;
+            }
+
+            label3.Text = "Name: " + name + "\n" + "Rank: " + Rank;
         }
     }
 }
