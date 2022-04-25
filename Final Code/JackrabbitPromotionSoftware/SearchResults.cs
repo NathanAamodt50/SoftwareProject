@@ -44,8 +44,8 @@ namespace JackrabbitPromotionSoftware
         private void SearchResults_Load(object sender, EventArgs e)
         {
             string Rank;
-            string name = Table[val].fName + " " + Table[val].lName;
-            int rankp =  Table[val].point/ 200;
+            string name = Table[res.val].fName + " " + Table[res.val].lName;
+            int rankp =  Table[res.val].point/ 200;
             switch (rankp)
             {
                 case 1:
