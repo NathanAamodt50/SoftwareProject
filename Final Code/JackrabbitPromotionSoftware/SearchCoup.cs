@@ -14,7 +14,6 @@ namespace JackrabbitPromotionSoftware
 
         public Customer[] Table;
         public Customer Hold;
-        public Value res;
         int Max = 10;
 
         public void filltable()
@@ -62,7 +61,7 @@ namespace JackrabbitPromotionSoftware
             Table[6].e_mail = "";
             Table[6].phone_Num = "4444-565-1234";
             Table[6].drinker = true;
-            Table[6].point = 600;
+            Table[6].point = 200;
 
             for (int i = 7; i < Table.Length; i ++)
             {
@@ -86,7 +85,7 @@ namespace JackrabbitPromotionSoftware
         {
             Table = new Customer[Max];
             Hold = new Customer();
-            res = new Value();
+
             InitializeTable();
             filltable();
             InitializeComponent();
@@ -137,10 +136,11 @@ namespace JackrabbitPromotionSoftware
                     SearchResults SR = new SearchResults(Hold);
                     SR.Show();
                 }
-                else if (textBox1.Text == "Gold" | textBox1.Text == "gold")
+                else if (textBox1.Text == "Gold" | textBox1.Text == "gold" | textBox1.Text == "Platinum" | textBox1.Text == "platinum" | textBox1.Text == "Silver" | textBox1.Text == "silver" | textBox1.Text == "Bronze" | textBox1.Text == "bronze" | textBox1.Text == "Unranked" | textBox1.Text == "unranked")
                 {
+                    string status = textBox1.Text;
                     this.Close();
-                    SearchGold SG = new SearchGold();
+                    SearchGold SG = new SearchGold(status);
                     SG.Show();
                 }
                 else

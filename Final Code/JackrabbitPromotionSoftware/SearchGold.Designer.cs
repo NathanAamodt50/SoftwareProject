@@ -45,6 +45,7 @@ namespace JackrabbitPromotionSoftware
             this.label3.TabIndex = 7;
             this.label3.Text = "Status: Gold Members";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Enter += new System.EventHandler(this.SearchGold_Load);
             // 
             // button1
             // 
@@ -105,6 +106,7 @@ namespace JackrabbitPromotionSoftware
             this.Controls.Add(this.label3);
             this.Name = "SearchGold";
             this.Text = "Search Results";
+            this.Load += new System.EventHandler(this.SearchGold_Load);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.button1, 0);
             this.Controls.SetChildIndex(this.button2, 0);

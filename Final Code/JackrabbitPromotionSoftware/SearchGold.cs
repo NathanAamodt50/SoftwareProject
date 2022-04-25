@@ -10,8 +10,10 @@ namespace JackrabbitPromotionSoftware
 {
     public partial class SearchGold : JackrabbitPromotionSoftware.GUI
     {
-        public SearchGold()
+        public string S { get; set; }
+        public SearchGold(string status)
         {
+            S = status;
             InitializeComponent();
         }
 
@@ -42,6 +44,11 @@ namespace JackrabbitPromotionSoftware
         {
             SucessfullySent SS = new SucessfullySent();
             SS.Show();
+        }
+
+        private void SearchGold_Load(object sender, EventArgs e)
+        {
+            label3.Text = "Rank: " + S;
         }
     }
 }
