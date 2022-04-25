@@ -10,8 +10,10 @@ namespace JackrabbitPromotionSoftware
 {
     public partial class SearchResults : JackrabbitPromotionSoftware.SearchCoup
     {
-        public SearchResults()
+        public Customer H;
+        public SearchResults(Customer Hold)
         {
+            H = new Customer(Hold.fName, Hold.lName, Hold.phone_Num, Hold.e_mail, Hold.drinker, Hold.point);
             InitializeComponent();
         }
 
@@ -44,8 +46,8 @@ namespace JackrabbitPromotionSoftware
         private void SearchResults_Load(object sender, EventArgs e)
         {
             string Rank;
-            string name = Table[res.val].fName + " " + Table[res.val].lName;
-            int rankp =  Table[res.val].point/ 200;
+            string name = H.fName + " " + H.lName;
+            int rankp =  H.point/ 200;
             switch (rankp)
             {
                 case 1:

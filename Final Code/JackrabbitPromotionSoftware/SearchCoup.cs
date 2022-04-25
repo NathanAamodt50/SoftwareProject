@@ -11,20 +11,10 @@ namespace JackrabbitPromotionSoftware
    
     public partial class SearchCoup : JackrabbitPromotionSoftware.GUI
     {
-        public class value
-        {
-            public int val { get; set; }
-            public value(int v = 0 )
-            {
-                val = v;
-            }
-            public value(value W)
-            {
-                val = W.val;
-            }
-        }
+
         public Customer[] Table;
-        public value res;
+        public Customer Hold;
+        public Value res;
         int Max = 10;
 
         public void filltable()
@@ -95,7 +85,8 @@ namespace JackrabbitPromotionSoftware
         public SearchCoup()
         {
             Table = new Customer[Max];
-            res = new value();
+            Hold = new Customer();
+            res = new Value();
             InitializeTable();
             filltable();
             InitializeComponent();
@@ -120,23 +111,30 @@ namespace JackrabbitPromotionSoftware
             {
                 string text = textBox1.Text;
                 string temp;
+
                 //compares textbox input to initalized customers
                 for (int c = 0; c < Table.Length; c++)
                 {
-                    temp = Table[c].fName + " " + Table[c].lName;
-                    if (temp == text)
-                    {
+                      temp = Table[c].fName + " " + Table[c].lName;
+                      if (temp == text)
+                      {
                         fullname = temp;
-                        
+                        Hold.fName = Table[c].fName;
+                        Hold.lName = Table[c].lName;
+                        Hold.e_mail = Table[c].e_mail;
+                        Hold.phone_Num = Table[c].phone_Num;
+                        Hold.drinker = Table[c].drinker;
+                        Hold.point = Table[c].point;
                     }
                 }
 
-               
+
+                
                 if (text == fullname)
                 {
                     
                     this.Close();
-                    SearchResults SR = new SearchResults();
+                    SearchResults SR = new SearchResults(Hold);
                     SR.Show();
                 }
                 else if (textBox1.Text == "Gold" | textBox1.Text == "gold")
