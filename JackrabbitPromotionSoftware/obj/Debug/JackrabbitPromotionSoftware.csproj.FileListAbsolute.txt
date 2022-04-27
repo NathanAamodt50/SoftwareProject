@@ -9,3 +9,10 @@ C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftwa
 C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.exe
 C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.pdb
 C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.SearchCoup.resources
+C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.SearchResults.resources
+C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.SucessfullySent.resources
+C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.NoRes.resources
+C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.ReservationGUI.resources
+C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.SearchGold.resources
+C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.Customer_Create_GUI.resources
+C:\Users\Natea\Desktop\Software Programming\Final Code\JackrabbitPromotionSoftware\obj\Debug\JackrabbitPromotionSoftware.VRes.resources

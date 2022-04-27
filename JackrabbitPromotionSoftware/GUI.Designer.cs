@@ -36,6 +36,7 @@ namespace JackrabbitPromotionSoftware
             this.Inventory = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // HomeButton
@@ -70,7 +71,7 @@ namespace JackrabbitPromotionSoftware
             this.SearchCoup.Name = "SearchCoup";
             this.SearchCoup.Size = new System.Drawing.Size(104, 42);
             this.SearchCoup.TabIndex = 2;
-            this.SearchCoup.Text = "Search Coupons";
+            this.SearchCoup.Text = "Search Promotions";
             this.SearchCoup.UseVisualStyleBackColor = false;
             this.SearchCoup.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -82,7 +83,7 @@ namespace JackrabbitPromotionSoftware
             this.Reservation.Name = "Reservation";
             this.Reservation.Size = new System.Drawing.Size(104, 42);
             this.Reservation.TabIndex = 3;
-            this.Reservation.Text = "Reservations";
+            this.Reservation.Text = "Create Reservations";
             this.Reservation.UseVisualStyleBackColor = false;
             this.Reservation.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -120,11 +121,20 @@ namespace JackrabbitPromotionSoftware
             this.label2.TabIndex = 6;
             this.label2.Text = "Home Page";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(161, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 7;
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Inventory);
@@ -133,7 +143,7 @@ namespace JackrabbitPromotionSoftware
             this.Controls.Add(this.SearchCust);
             this.Controls.Add(this.HomeButton);
             this.Name = "GUI";
-            this.Text = "Form1";
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,6 +159,7 @@ namespace JackrabbitPromotionSoftware
         private System.Windows.Forms.Button Inventory;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

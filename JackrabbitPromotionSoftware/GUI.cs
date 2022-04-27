@@ -12,36 +12,43 @@ namespace JackrabbitPromotionSoftware
 {
     public partial class GUI : Form
     {
+ 
         public GUI()
         {
+
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
+        //Takes you back to home page
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            GUI myForm = (GUI)Application.OpenForms["GUI"];
+            myForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Opens SearchCoup
+        private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
             SearchCoup SC = new SearchCoup();
             SC.Show();
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //Opens Reservations
         private void button4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ReservationGUI R = new ReservationGUI();
+            R.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)

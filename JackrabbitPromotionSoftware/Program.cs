@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace JackrabbitPromotionSoftware
 {
-    static class Program
+    public class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,10 @@ namespace JackrabbitPromotionSoftware
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI());
+            Application.Run(new GUI());        
+            
         }
+
     }
+    
 }

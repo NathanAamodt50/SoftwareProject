@@ -47,6 +47,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Customer_Create_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Create_GUI.designer.cs">
+      <DependentUpon>Customer_Create_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="VRes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VRes.Designer.cs">
+      <DependentUpon>VRes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.cs" />
+    <Compile Include="ReservationGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationGUI.Designer.cs">
+      <DependentUpon>ReservationGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchGold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchGold.Designer.cs">
+      <DependentUpon>SearchGold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="No Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="No Results.Designer.cs">
+      <DependentUpon>No Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SucessfullySent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SucessfullySent.Designer.cs">
+      <DependentUpon>SucessfullySent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchResults.Designer.cs">
+      <DependentUpon>SearchResults.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchCoup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +106,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Customer_Create_GUI.resx">
+      <DependentUpon>Customer_Create_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VRes.resx">
+      <DependentUpon>VRes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationGUI.resx">
+      <DependentUpon>ReservationGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchGold.resx">
+      <DependentUpon>SearchGold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="No Results.resx">
+      <DependentUpon>No Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SucessfullySent.resx">
+      <DependentUpon>SucessfullySent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI.resx">
       <DependentUpon>GUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +138,9 @@
     </Compile>
     <EmbeddedResource Include="SearchCoup.resx">
       <DependentUpon>SearchCoup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchResults.resx">
+      <DependentUpon>SearchResults.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
